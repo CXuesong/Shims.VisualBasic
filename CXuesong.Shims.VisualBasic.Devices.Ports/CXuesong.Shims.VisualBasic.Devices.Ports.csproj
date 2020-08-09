@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../CXuesong.Shims.VisualBasic.Packages.props" />
+
+  <PropertyGroup>
+    <RootNamespace>CXuesong.Shims.VisualBasic.Devices</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Provides Computer.Ports extension methods for CXuesong.Shims.VisualBasic.Devices package.</Description>
+    <PackageTags>$(PackageTags) VisualBasic.Devices VisualBasic.Devices.Ports My.Computer.Ports</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CXuesong.Shims.VisualBasic.Devices\CXuesong.Shims.VisualBasic.Devices.vbproj" />
+  </ItemGroup>
+
+</Project>

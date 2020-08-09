@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="../CXuesong.Shims.VisualBasic.Packages.props" />
 
   <PropertyGroup>
     <RootNamespace>CXuesong.Shims.VisualBasic.Devices</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Description>Provides shim objects for Microsoft.VisualBasic.Devices, so you can derive your own My.Computer instance from Computer class.</Description>
-    <PackageTags>$(PackageTags) VisualBasic.Devices</PackageTags>
+    <PackageTags>$(PackageTags) VisualBasic.Devices My.Computer</PackageTags>
   </PropertyGroup>
 </Project>
