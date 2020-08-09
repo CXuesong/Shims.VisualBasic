@@ -1,31 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../CXuesong.Shims.VisualBasic.Packages.props" />
 
   <PropertyGroup>
     <RootNamespace>CXuesong.Shims.VisualBasic.ApplicationServices</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <OptionStrict>On</OptionStrict>
-    <Nullable>Enable</Nullable>
-    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>CXuesong</Authors>
-    <Version>0.1.0</Version>
-    <Product>CXuesong.Shims.VisualBasic</Product>
-    <Company />
     <Description>Provides shim objects for Microsoft.VisualBasic.ApplicationServices, so you can derive your own My.Application instance from ApplicationBase or ConsoleApplicationBase class.</Description>
-    <NeutralLanguage>en-us</NeutralLanguage>
+    <PackageTags>$(PackageTags) VisualBasic.ApplicationServices</PackageTags>
   </PropertyGroup>
-
-  <PropertyGroup>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/CXuesong/Shims.VisualBasic</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/CXuesong/Shims.VisualBasic.git</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>VisualBasic VisualBasic.ApplicationServices</PackageTags>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
-  </ItemGroup>
 </Project>
