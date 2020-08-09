@@ -42,7 +42,7 @@ Public Class AssemblyInfo
 
     Public ReadOnly Property DirectoryPath As String
 
-    Public ReadOnly Property LoadedAssemblies As IReadOnlyCollection(Of Assembly)
+    Public ReadOnly Property LoadedAssemblies As IReadOnlyList(Of Assembly)
         Get
             Return AppDomain.CurrentDomain.GetAssemblies()
         End Get

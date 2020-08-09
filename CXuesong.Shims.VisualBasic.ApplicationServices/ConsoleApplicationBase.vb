@@ -4,7 +4,7 @@ Imports System.Reflection
 Public Class ConsoleApplicationBase
     Inherits ApplicationBase
 
-    Private ReadOnly m_CommandLineArgs As New Lazy(Of IReadOnlyCollection(Of String))(Function() Environment.GetCommandLineArgs())
+    Private ReadOnly m_CommandLineArgs As New Lazy(Of IReadOnlyList(Of String))(Function() Environment.GetCommandLineArgs())
 
     Public Sub New(owningAssembly As Assembly)
         MyBase.New(owningAssembly)
@@ -12,7 +12,7 @@ Public Class ConsoleApplicationBase
 
     ' Public ReadOnly Property Deployment As ApplicationDeployment
 
-    Public ReadOnly Property CommandLineArgs As IReadOnlyCollection(Of String)
+    Public ReadOnly Property CommandLineArgs As IReadOnlyList(Of String)
         Get
             Return If(InternalCommandLine, m_CommandLineArgs.Value)
         End Get

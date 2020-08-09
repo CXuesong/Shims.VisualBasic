@@ -17,7 +17,7 @@ Public Class FileSystemProxy
         End Set
     End Property
 
-    Public ReadOnly Property Drives As IReadOnlyCollection(Of DriveInfo)
+    Public ReadOnly Property Drives As IReadOnlyList(Of DriveInfo)
         Get
             Return DriveInfo.GetDrives
         End Get
