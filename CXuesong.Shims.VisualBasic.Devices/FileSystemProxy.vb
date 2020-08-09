@@ -119,6 +119,32 @@ Public Class FileSystemProxy
         IO.File.Move(file, Path.Combine(Path.GetDirectoryName(file), newName))
     End Sub
 
+    Public Sub WriteAllBytes(file As String, data As Byte(), append As Boolean)
+        If append Then
+            Using fs = New FileStream(file, FileMode.Append)
+                fs.Write(data, 0, data.Length)
+            End Using
+        Else
+            IO.File.WriteAllBytes(file, data)
+        End If
+    End Sub
+
+    Public Sub WriteAllText(file As String, text As String, append As Boolean)
+        If append Then
+            IO.File.AppendAllText(file, text)
+        Else
+            IO.File.WriteAllText(file, text)
+        End If
+    End Sub
+
+    Public Sub WriteAllText(file As String, text As String, append As Boolean, encoding As Encoding)
+        If append Then
+            IO.File.AppendAllText(file, text, encoding)
+        Else
+            IO.File.WriteAllText(file, text, encoding)
+        End If
+    End Sub
+
     Private Sub CheckFileExistence(path As String)
         If Not File.Exists(path) Then Throw New FileNotFoundException("Cannot find the specified file.", path)
     End Sub
