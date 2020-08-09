@@ -7,6 +7,7 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "CXuesong.Shims.VisualBasic.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2283840C-056E-4DB0-81F9-483A0BC6D89F}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		CXuesong.Shims.VisualBasic.Commons.props = CXuesong.Shims.VisualBasic.Commons.props
